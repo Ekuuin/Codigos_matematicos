@@ -15,7 +15,8 @@ def NewtonRap(x0):
     return x0
 
 def NewtonRap2(x0):
-    tol = 1e-4; err = 1000
+    tol = 1e-4 
+    err = 1000
     while err > tol:
         x1 = x0 - df(x0)/d2f(x0) #Metodo de Newton
         err = np.abs(x1-x0)     #Calcula los maximos y minimos de la funcion

@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-'''
-f = lambda x , y : (y + 1) * (x + 1) * np.cos(x**2 + 2*x)   #Función lambda donde tenemos la ecuación que evaluaremos.
+""" f = lambda x , y : (y + 1) * (x + 1) * np.cos(x**2 + 2*x)   #Función lambda donde tenemos la ecuación que evaluaremos.
 
 def rk(x,y,h,xf):
     xarr = np.array([]) #Creamos un par de arreglos vacíos donde guardaremos los valores correspondientes en cada iteración.
@@ -25,8 +24,7 @@ t = rk(0, 4, 0.01, 2) #Llamado de la función rk usando x: valor inicial x - y: 
 plt.grid()
 plt.figure(1)
 plt.plot(t[0], t[1])
-plt.show()
-'''
+plt.show() """
 
 V = np.array([[1,2,3]])
 M = np.array([[1,2,3], [4,-5,6], [7,8,9]])

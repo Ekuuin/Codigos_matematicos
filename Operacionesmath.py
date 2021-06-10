@@ -75,7 +75,6 @@ def sqrt(n):
         x2 = (x1+n/x1)/2
         err = abs(x2-x1)
         x1 = x2
-    print
     return x1
 
 print("Raiz = ", sqrt(1.25))

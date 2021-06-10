@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-"""f2 = lambda x: x**5 - 3*x*x + 1.6
+""" f2 = lambda x: x**5 - 3*x*x + 1.6
 
 def f(x):
     return x**5 - 3*x*x + 1.6
@@ -11,11 +11,9 @@ x = np.arange(-1 , 1.5 , 0.1)
 plt.grid()
 plt.figure(1)
 plt.plot(x, f2(x))
-plt.show()
-"""
+plt.show() """
 
-'''
-f = lambda x : x**5 - 3*x*x +1.6
+""" f = lambda x : x**5 - 3*x*x +1.6
 df = lambda x : 5*x**4 - 6*x + 1e-4
 d2f = lambda x : 20*x**3 - 6 + 1e-8
 
@@ -56,8 +54,7 @@ plt.figure(1)
 plt.plot(x, f(x))
 plt.plot(xo, xo*0, 'ro')
 plt.plot(xm, f(xm), 'bo')
-plt.show()
-'''
+plt.show() """
 
 Dx = 1e-6
 f = lambda x : x**2 + np.log(2*x + 7)*np.cos(3*x) + 0.1
@@ -73,7 +70,8 @@ def NewtonRap(x0):
     return x0
 
 def NewtonRap2(x0):
-    tol = 1e-4; err = 1000
+    tol = 1e-4
+    err = 1000
     while err > tol:
         x1 = x0 - df(x0)/d2f(x0) #Metodo de Newton
         err = np.abs(x1-x0)     #Calcula los maximos y minimos de la funcion
